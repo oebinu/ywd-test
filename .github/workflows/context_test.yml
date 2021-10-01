@@ -14,8 +14,9 @@ jobs:
         env:
           COMMIT_ID: ${{ github.sha }}
         run: echo "Commit id => $COMMIT_ID"
-        
-
-
+      
       - name: ls -la
         run: ls -la
+        
+      - name: github.sha
+        run: echo "${{ github.sha }}"
